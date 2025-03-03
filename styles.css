@@ -146,6 +146,10 @@ button:hover {
       padding-left: 50px; /* Adjust padding for smaller screens */
       padding-right: 50px; /* Adjust padding for smaller screens */
   }
+
+#elements, #keyboardphoto{
+  max-width:100%
+}
 }
 
 @media (max-width: 768px) {
