@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Music Lesson's With Rubin </title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet"> 
+    </head>
+
+
+
+
+    <body style="background-color:#800978;" >
+
+<div class="container">
+
+        <h1 style="text-align: center;"> Music Lessons With Rubin </h1>
+
+        <div id="welcome-images" class="flex-container">
+        
+            <div id="rubinguitar" style="flex-grow:1";>
+              <img src="Rubinguitar.jpeg" width="100%" >
+            </div>
+            
+            <div id="flyer"style="flex-grow:1">
+              <img src="flyer.png" width="100%" >
+            </div>    
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div id="middle-text" class="grid-container">
+        
+        <div><h1><strong>Start playing music right away with fun, engaging, and enriching lessons!</strong> </h1></div>
+        
+        <div> in my 10+ years of teaching I have worked with students of all ages at a wide variety of skill levels. </div>
+       
+        <div><h1>The Experience</h1></div>
+       
+        <div> My 45-minute lessons are peronalized to fit each student's interests, and are filled with enough variety to keep every type of learner engaged! 
+          I will work with you to set achievable goals, and it is my goal that each student learns to become their own best teacher, 
+          regardless of where they are on the path of a lifelong love of music! </div>
+        
+        </div>
+  
+  
+  
+  
+  
+      <div id="elementsandphoto" class="flex-container">
+        <div id="elements" style= "flex-grow:1 ; text-align:right">
+         <h1>Elements of Lessons</h1>
+            <ul>
+            <li>Music Theory </li>
+            <li>Ear Training </li>
+            <li>Reading Music </li>
+            <li>Rock/Pop </li>
+            <li>Jazz </li>
+            <li>Classical Music </li>
+            <li>Singing and Playing</li>
+            <li>Improvising </li> 
+            <li>Songwriting/Composition </li>
+            </ul>
+        </div>
+        
+        <div id="keyboardphoto" style="flex-grow:1">
+            <img src="4.jpeg" height="600px">
+        </div>
+        
+        </div>
+ 
+ 
+        <div style="margin-bottom:40px;">
+        <h1>About Me
+        </h1>
+        <p>
+        I am a multi-instrumentalist musician and composer. I have gigged professionally for the last 5 years in a variety of genres ranging from rock, to jazz and soul. I have a bachelors degree from New England Conservatory where I studied Contemporary Improvisation.
+        </p>
+        </div>
+  
+  
+  
+        <h1>Contact Rubin</h1>
+
+     
+   
+    <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your User ID
+        emailjs.init("PqPWO6yu8EBUhMKhc");
+
+        // Handle the form submission
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Send the email using EmailJS
+            emailjs.sendForm("service_98riikk", "template_da919ab", this)
+                .then(function(response) {
+                    alert("Message sent successfully!");
+                    // Clear the form
+                    document.getElementById("contact-form").reset();
+                }, function(error) {
+                    alert("Error sending message: " + JSON.stringify(error));
+                });
+        });
+    </script>
+
+  </div>
+  </body>
+</html>

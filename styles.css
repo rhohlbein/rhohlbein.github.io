@@ -1,0 +1,156 @@
+
+
+
+/* {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+*  {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+      color:aliceblue } 
+
+
+  
+
+
+#welcome-images
+{
+  width: 96%;
+  margin-top:10px;
+  padding-left:2%;
+  padding-right:2%;
+}
+
+#flyer
+{
+  min-width:300px;
+  max-width: 48%;
+
+}
+
+#rubinguitar
+{
+  min-width:300px;
+  max-width: 48%;
+}
+
+
+
+
+#elementsandphoto
+{
+  min-height: 300px;
+  margin-bottom:0px;
+  margin-top:40px;
+  justify-content: center;
+  
+}
+
+#elements
+{
+  max-width:50%;
+  min-height:100px;
+}
+
+#keyboardphoto
+{
+  
+  max-width:50%;
+}
+
+
+
+.flex-container
+{
+    
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+
+
+.grid-container
+{
+    
+    display:grid;
+    
+
+}
+
+
+ li {
+     margin: 10px 0;
+    }
+
+div:not([class])
+{
+  outline:2px solid black;
+  padding: 0.5em;
+  
+  }
+
+
+  .form-row {
+    margin-bottom: 10px;
+}
+
+.form-input {
+    display: block;
+}
+
+.form-error {
+    color: red;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label, input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Container class */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Optional: you can set a max-width for larger screens */
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto 30px auto; /* Centers the container */
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+/* Make it responsive */
+@media (max-width: 1200px) {
+  .container {
+      padding-left: 50px; /* Adjust padding for smaller screens */
+      padding-right: 50px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding-left: 20px; /* Further reduce padding for mobile */
+      padding-right: 20px; /* Further reduce padding for mobile */
+  }
+}
