@@ -1,53 +1,61 @@
 
 
 
-/* {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 
 *  {
     font-family: "Playwrite IT Moderna", cursive;
     font-optical-sizing: auto;
     font-weight: 100;
+
     font-style: normal;
-      color:aliceblue } 
+      color:rgb(0, 0, 0) } 
 
 
-  
+      p {
+        background-color: rgba(161, 222, 233, 0.592);
+        display: flex;
+        flex-grow: 1; /* Make <p> fill the available space */
+        margin: 0; /* Remove default margin */
+      }
+      h1 {
+        color: azure;
+        background-color: #004cff85;
+        flex-grow: 1; /* Make <p> fill the available space */
+        margin: 0; /* Remove default margin */
+      }
 
 
 #welcome-images
 {
-  width: 96%;
+  width: 100%;
   margin-top:10px;
-  padding-left:2%;
-  padding-right:2%;
+  /* padding-left:2%; */
+  /* padding-right:2%; */
 }
 
 #flyer
 {
-  min-width:300px;
+  min-width:400px;
   max-width: 48%;
 
 }
 
 #rubinguitar
 {
-  min-width:300px;
+  min-width:400px;
   max-width: 48%;
 }
 
 
-
-
-#elementsandphoto
+#aboutmeandphoto
 {
   min-height: 300px;
   margin-bottom:0px;
   margin-top:40px;
-  justify-content: center;
   
 }
 
-#elements
+#aboutme
 {
   max-width:50%;
   min-height:100px;
@@ -55,9 +63,31 @@
 
 #keyboardphoto
 {
-  
   max-width:50%;
 }
+
+
+
+#aboutlessons
+{
+  min-height: 300px;
+  margin-bottom:0px;
+  margin-top:40px;
+  
+}
+
+#lessonexperience
+{
+  /* line-height: 8vh; */
+  /* max-height: 400px; */
+  max-width:48%;
+}
+
+#topicscovered
+{
+  max-width:48%;
+}
+
 
 
 
@@ -78,9 +108,61 @@
     
     display:grid;
     
+}
+
+.image-container {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px; /* Adjust the image width as needed */
 
 }
 
+/* Style the image */
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for the text list on top of the image */
+.text-overlay {
+  position:absolute;
+  top: 10px; /* Adjust as needed */
+  left: 100px; /* Adjust as needed */
+  left: 5%; /* Center the text horizontally by adding a margin */
+  right: 5%; /* Same margin on the right */
+  padding: 10px;
+  text-shadow:
+        1px 1px 0px black,
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+  list-style-type: none;
+}
+
+.text-overlay h2 {
+  font-size: 3vw; 
+  font-weight: bold;
+    /* font-size: 24px; */
+  margin-bottom: 10px; /* Space between header and list */
+  color:lavender
+}
+
+.text-overlay li {
+  font-size: 2vw; 
+  font-weight: bold;
+
+  /* font-size: 18px; */
+  margin: 5px 0;  
+  color: lavender;
+}
+
+ul {
+  list-style-type: none;
+  /* padding: 0; Optional, to remove any default padding */
+  /* margin: 0;  Optional, to remove any default margin */
+}
 
  li {
      margin: 10px 0;
@@ -93,18 +175,6 @@ div:not([class])
   
   }
 
-
-  .form-row {
-    margin-bottom: 10px;
-}
-
-.form-input {
-    display: block;
-}
-
-.form-error {
-    color: red;
-}
 
 
 form {
@@ -152,7 +222,7 @@ button:hover {
       padding-right: 50px; /* Adjust padding for smaller screens */
   }
 
-#elements, #keyboardphoto{
+#aboutme, #keyboardphoto{
   max-width:100%
 }
 }
