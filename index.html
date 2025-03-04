@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Music Lesson's With Rubin </title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet"> 
+    </head>
+
+
+
+
+    <body style="background-color:#ffe9fe;" >
+
+<div class="container">
+
+        <h1 style="text-align: center;
+        text-shadow:
+        1px 1px 0px black,
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black";> 
+          🎵 Music Lessons With Rubin 🎵</h1>
+
+        <div id="welcome-images" class="flex-container">
+        
+            <div id="rubinguitar" style="flex-grow:1";>
+              <img src="Rubinguitar.jpg" width="100%" >
+            </div>
+            
+            <div id="flyer"style="flex-grow:1">
+              <img src="flyer.png" width="100%" >
+            </div>    
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div id="middle-text" class="grid-container">
+        
+        <div><h1>Start playing music right away with fun and engaging lessons! </h1></div>
+        
+        <div> <p>in my 10+ years of teaching I have worked with students of all ages at a wide variety of skill levels. I am confident that I can help you feel comfortable on your instrument. </p> </div>
+       
+        <div id="aboutlessons" class="flex-container" margin-bottom="40px">
+        
+        <div id="lessonexperience" style="margin-bottom:40px;" class="flex-container" >
+          <h1>Lesson Experience</h1>
+        <p> My 45-minute lessons are peronalized to fit each student's interests, and are filled with enough variety to keep every type of learner engaged! 
+          I will work with you to set achievable goals--and it is my goal that each student learns to become their own best teacher, 
+          regardless of where they are on the path of a lifelong love of music. </p>
+        </div>
+        
+
+        <div class="image-container" id="topicscovered" style= "flex-grow:1 ; text-align:right">
+          <img src="unstruments.jpg">
+          <div class="text-overlay">
+          <h2> Topics Covered</h2>
+          <ul >
+            <li>Music Theory </li>
+             <li>Ear Training </li>
+             <li>Reading Music </li>
+             <li>Rock/Pop </li>
+             <li>Jazz </li>
+             <li>Classical </li>
+             <li>Singing and Playing</li>
+             <li>Improvisation </li> 
+             <li>Songwriting/Composition </li>
+             </ul>
+          </ul>
+          </div>
+        </div>
+
+      </div>
+  
+  
+      <div id="aboutmeandphoto" class="flex-container" margin-bottom="100px">
+
+       
+        
+        <div id="keyboardphoto" style="flex-grow:1">
+            <img src="4.jpeg" height="600px">
+        </div>
+        
+        <div id="aboutme" style="margin-bottom:40px;">
+          <h1>About Me
+          </h1>
+          <p>
+          I am a multi-instrumentalist musician and composer. I first started playing music at age 7
+           when I picked up the trumpet. I have been gigging professionally since highschool, 
+           and have had the opportunity to work in a variety of genres ranging from rock, to jazz and soul. 
+           In 2018 I recieved a bachelors degree from New England Conservatory where I studied 
+          Contemporary Improvisation.
+          </p>
+          </div>
+
+        </div>
+ 
+  
+  
+  
+        <h1>Contact</h1>
+
+     
+   
+    <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your User ID
+        emailjs.init("PqPWO6yu8EBUhMKhc");
+
+        // Handle the form submission
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Send the email using EmailJS
+            emailjs.sendForm("service_98riikk", "template_da919ab", this)
+                .then(function(response) {
+                    alert("Message sent successfully!");
+                    // Clear the form
+                    document.getElementById("contact-form").reset();
+                }, function(error) {
+                    alert("Error sending message: " + JSON.stringify(error));
+                });
+        });
+    </script>
+
+  </div>
+  </body>
+</html>
