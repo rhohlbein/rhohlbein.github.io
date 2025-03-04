@@ -222,7 +222,7 @@ button:hover {
       padding-right: 50px; /* Adjust padding for smaller screens */
   }
 
-#aboutme, #keyboardphoto{
+  #flyer, #rubinguitar, #aboutme, #keyboardphoto, #aboutlessons, #lessonexperience, #topicscovered{
   max-width:100%
 }
 }
@@ -231,5 +231,8 @@ button:hover {
   .container {
       padding-left: 20px; /* Further reduce padding for mobile */
       padding-right: 20px; /* Further reduce padding for mobile */
+  }
+  #flyer, #rubinguitar, #aboutme, #keyboardphoto, #aboutlessons, #lessonexperience, #topicscovered{
+    max-width:100%
   }
 }
