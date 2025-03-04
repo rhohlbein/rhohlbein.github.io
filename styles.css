@@ -18,7 +18,9 @@
         margin: 0; /* Remove default margin */
       }
       h1 {
+        
         color: azure;
+        text-align: center;
         background-color: #004cff85;
         flex-grow: 1; /* Make <p> fill the available space */
         margin: 0; /* Remove default margin */
@@ -81,6 +83,7 @@
   /* line-height: 8vh; */
   /* max-height: 400px; */
   max-width:48%;
+  height: auto;
 }
 
 #topicscovered
@@ -89,16 +92,25 @@
 }
 
 
+.stretch-text {
+  padding: 10px;
+  flex-grow: 1;  /* Allow the <p> element to grow and fill available space */
+  line-height: 5vh; 
+  /* font-size: 2rem; */
+  display: flex;  /* Make it a flex container to control the text's height */
 
+}
 
 .flex-container
 {
     
     display:flex;
     flex-wrap:wrap;
+    flex-grow: 1;
     flex-direction: row;
     justify-content: space-evenly;
     align-items:center;
+    align-items: stretch;
 
 }
 
@@ -142,7 +154,7 @@
 }
 
 .text-overlay h2 {
-  font-size: 3vw; 
+  font-size: 20px+1vw; 
   font-weight: bold;
     /* font-size: 24px; */
   margin-bottom: 10px; /* Space between header and list */
@@ -150,7 +162,7 @@
 }
 
 .text-overlay li {
-  font-size: 2vw; 
+  font-size: 18px+0.5vw; 
   font-weight: bold;
 
   /* font-size: 18px; */
@@ -229,8 +241,8 @@ button:hover {
 
 @media (max-width: 768px) {
   .container {
-      padding-left: 20px; /* Further reduce padding for mobile */
-      padding-right: 20px; /* Further reduce padding for mobile */
+      padding-left: 15px; /* Further reduce padding for mobile */
+      padding-right: 15px; /* Further reduce padding for mobile */
   }
   #flyer, #rubinguitar, #aboutme, #keyboardphoto, #aboutlessons, #lessonexperience, #topicscovered{
     max-width:100%
