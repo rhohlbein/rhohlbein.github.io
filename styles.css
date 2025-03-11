@@ -328,12 +328,12 @@ button:hover {
 }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
       padding-left: 15px; /* Further reduce padding for mobile */
       padding-right: 15px; /* Further reduce padding for mobile */
   }
   #flyer, #rubinguitar, #aboutme, #keyboardphoto, #aboutlessons, #lessonexperience, #topicscovered{
-    max-width:100%
+    max-width: 80%;
   }
 }
