@@ -15,9 +15,11 @@
         font-optical-sizing: auto;
         font-weight: 200;
         font-style: normal;
-        font-size: large;
+        font-size: 3vh;
+        line-height:  4em;
         background-color: rgba(161, 222, 233, 0.592);
         display: flex;
+        flex-wrap:wrap;
         flex-grow: 1; /* Make <p> fill the available space */
         margin: 0; /* Remove default margin */
       }
@@ -29,6 +31,12 @@
         flex-grow: 1; /* Make <p> fill the available space */
         margin: 0; /* Remove default margin */
       }
+
+      .bigger { font-size:200%; line-height: 1.2;
+        display:flex;
+        flex-wrap:wrap;
+        margin-bottom: 5px;
+       }
 
 
 #welcome-images
@@ -55,9 +63,12 @@
 
 #aboutmeandphoto
 {
+  width: 100%;
   min-height: 300px;
   margin-bottom:0px;
   margin-top:40px;
+  align-items: center;
+
   
 }
 
@@ -76,9 +87,12 @@
 
 #aboutlessons
 {
+  width: 100%;
   min-height: 300px;
   margin-bottom:0px;
   margin-top:40px;
+  align-items: center;
+
   
 }
 
@@ -124,6 +138,7 @@
     
     display:grid;
     
+    
 }
 
 .image-container {
@@ -144,8 +159,8 @@
 /* Style for the text list on top of the image */
 .text-overlay {
   position:absolute;
-  top: 10px; /* Adjust as needed */
-  left: 100px; /* Adjust as needed */
+  top: 10px; 
+  left: 20px; 
   left: 5%; /* Center the text horizontally by adding a margin */
   right: 5%; /* Same margin on the right */
   padding: 10px;
@@ -158,21 +173,91 @@
 }
 
 .text-overlay h2 {
-  font-size: 20px+1vw; 
+
+  font-size: 40px+1vw; 
   font-weight: bold;
     /* font-size: 24px; */
-  margin-bottom: 10px; /* Space between header and list */
+  margin-bottom: 200px; /* Space between header and list */
   color:lavender
 }
 
 .text-overlay li {
-  font-size: 18px+0.5vw; 
+
+  font-size: 40px; 
   font-weight: bold;
 
   /* font-size: 18px; */
   margin: 5px 0;  
   color: lavender;
 }
+
+
+
+
+
+
+
+.list-box {
+  display: flex;
+  align-items: right;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  /* background-color: #ffffff6e; */
+  /* border: 2px solid #ccc; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+  color: #d000ff;
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
+.list-item-container {
+  overflow:visible;
+  width: 100%; 
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  display: none;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  /* background-color: #3f8fff84; */
+  /* border-bottom: 1px solid #eee; */
+}
+
+.list-item:first-child {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 ul {
   list-style-type: none;

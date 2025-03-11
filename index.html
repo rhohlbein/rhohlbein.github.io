@@ -16,6 +16,9 @@
 
     <body style="background-color:#ffe9fe;" >
 
+
+
+
 <div class="container">
 
         <h1 style="text-align: center;
@@ -45,38 +48,59 @@
         
         <div id="middle-text" class="grid-container">
         
-        <div><h1>Start playing music right away with fun and engaging lessons! </h1></div>
+        <!-- <div><h1>Lets make music together! </h1></div> -->
         
-        <div> <p class="stretch-text">in my 10+ years of teaching I have worked with students of all ages at a wide variety of skill levels. I am confident that I can help you feel comfortable on your instrument. </p> </div>
+        <div> <p class="stretch-text"><span class='bigger'>Lets make music together!</span>
+           If are someone who wants to explore the bottomless well of wonder that is music, dont hesitate to reach out! I have taught piano, guitar, drums, bass, and brass instruments--as well as 
+           general music theory, ear training, and composition lessons. 
+           In my 10+ years of teaching I have worked with students of all ages at a wide variety of skill levels. From retired adults who are trying to stay mentally sharp, 
+           to toddlers still developing their motor-skills. From middle-schoolers in bands, to high schoolers trying to develop a skill that will set them apart on college applications.
+           I have also worked with lots of musicians who have successfully created a career in music, but never had any formal training.  I am confident that I can help you feel more comfortable on your instrument, 
+           and start having fun playing music right away!
+           </p> </div>
        
         <div id="aboutlessons" class="flex-container" margin-bottom="40px">
         
         <div id="lessonexperience" style="margin-bottom:40px;" >
           <h1>Lesson Experience</h1>
-        <p class="stretch-text"> My 45-minute lessons are peronalized to fit each student's interests, and are filled with enough variety to keep every type of learner engaged! 
-          I will work with you to set achievable goals--and it is my goal that each student learns to become their own best teacher, 
-          regardless of where they are on the path of a lifelong love of music. </p>
+        <p class="stretch-text">  
+          My 45-minute lessons are peronalized to fit each student's interests, 
+          and are filled with enough variety to keep every type of learner engaged! 
+          I will work with you to set achievable goals--and it is my goal that each 
+          student learns to become their own best teacher. In all of my lessons I put an 
+          emphasis on ear-training,
+          music theory, and improvisation. 
+         </p>
         </div>
         
+
 
         <div class="image-container" id="topicscovered" style= "flex-grow:1 ; text-align:right">
           <img src="unstruments.jpg">
           <div class="text-overlay">
           <h2> Topics Covered</h2>
-          <ul >
-            <li>Music Theory </li>
-             <li>Ear Training </li>
-             <li>Reading Music </li>
-             <li>Rock/Pop </li>
-             <li>Jazz </li>
-             <li>Classical </li>
-             <li>Singing and Playing</li>
-             <li>Improvisation </li> 
-             <li>Songwriting/Composition </li>
+          <div class="list-box">
+            <button class="nav-btn left" onclick="prevItem()">&#8592;</button>
+          <div class="list-item-container">
+          <ul id="list">
+            <li class="list-item">Music Theory </li>
+             <li class="list-item">Ear Training </li>
+             <li class="list-item">Reading Music </li>
+             <li class="list-item">Rock/Pop </li>
+             <li class="list-item">Jazz </li>
+             <li class="list-item">Classical </li>
+             <li class="list-item">Singing and Playing</li>
+             <li class="list-item">Improvisation </li> 
+             <li class="list-item">Songwriting and Composition </li>
+             <li class="list-item">Recording</li>
              </ul>
-          </ul>
+          </div>
+          <button class="nav-btn right" onclick="nextItem()">&#8594;</button>
+
+          </div>
           </div>
         </div>
+        <script src="script.js"></script>
 
       </div>
   
@@ -102,14 +126,10 @@
           </div>
 
         </div>
- 
-  
-  
-  
-        <h1>Contact</h1>
 
-     
-   
+  
+  
+        <h1>Contact</h1>     
     <form id="contact-form">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
@@ -122,6 +142,7 @@
 
         <button type="submit">Send Message</button>
     </form>
+
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
