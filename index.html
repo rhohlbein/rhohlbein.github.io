@@ -9,7 +9,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    </head>
+    
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+ 
+    
+      </head>
 
 
 
@@ -78,33 +86,62 @@
 
         <div class="image-container" id="topicscovered" style= "flex-grow:1 ; text-align:right">
           <img src="unstruments.jpg">
-          <div class="text-overlay">
-          <h2> Topics Covered</h2>
-          <div class="list-box">
-            <button class="nav-btn left" onclick="prevItem()">&#8592;</button>
-          <div class="list-item-container">
-          <ul id="list">
-            <li class="list-item">Music Theory </li>
-             <li class="list-item">Ear Training </li>
-             <li class="list-item">Reading Music </li>
-             <li class="list-item">Rock/Pop </li>
-             <li class="list-item">Jazz </li>
-             <li class="list-item">Classical </li>
-             <li class="list-item">Singing and Playing</li>
-             <li class="list-item">Improvisation </li> 
-             <li class="list-item">Songwriting and Composition </li>
-             <li class="list-item">Recording</li>
-             </ul>
+          <!-- <div class="text-overlay"> -->
+          <!-- <h2> Topics Covered</h2> -->
+          <!-- <div class="list-box"> -->
+            <!-- <button class="nav-btn left" onclick="prevItem()">&#8592;</button> -->
+          <!-- <div class="list-item-container"> -->
+          <!-- <ul id="list"> -->
+            <!-- <li class="list-item">Music Theory </li> -->
+             <!-- <li class="list-item">Ear Training </li> -->
+             <!-- <li class="list-item">Reading Music </li> -->
+             <!-- <li class="list-item">Rock/Pop </li> -->
+             <!-- <li class="list-item">Jazz </li> -->
+             <!-- <li class="list-item">Classical </li> -->
+             <!-- <li class="list-item">Singing and Playing</li> -->
+             <!-- <li class="list-item">Improvisation </li>  -->
+             <!-- <li class="list-item">Songwriting and Composition </li> -->
+             <!-- <li class="list-item">Recording</li> -->
+             <!-- </ul> -->
           </div>
-          <button class="nav-btn right" onclick="nextItem()">&#8594;</button>
+          <!-- <button class="nav-btn right" onclick="nextItem()">&#8594;</button> -->
 
-          </div>
-          </div>
+
+
+
+
+          <!-- </div> -->
+          <!-- </div> -->
         </div>
-        <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
 
-      </div>
+      <!-- </div> -->
   
+
+      <!-- <h1> Topics Covered</h1> -->
+
+<div id="carousel" class="container" >
+
+
+    <div class="owl-carousel owl-theme">
+      <div class="item">Music Theory</div>
+      <div class="item">Ear Training</div>
+      <div class="item">Rock/Pop</div>
+      <div class="item">Jazz</div>
+      <div class="item">Classical</div>
+      <div class="item">Reading Music</div>
+      <div class="item">Singing and Playing</div>
+      <div class="item">Improvisation</div>
+      <div class="item">Songwriting and Composition</div>
+      <div class="item">Recording</div>
+      
+  </div>
+
+
+
+</div> 
+
+   
   
       <div id="aboutmeandphoto" class="flex-container">
 
@@ -170,6 +207,38 @@
                 });
         });
     </script>
+
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Initialize Owl Carousel -->
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 3,          // Number of items to display
+                loop: true,        // Enable looping
+                margin: 10,        // Space between items
+                autoplay: true,    // Enable autoplay
+                autoplayTimeout: 2000, // Timeout for autoplay
+                responsive: {      // Responsive settings for different screen sizes
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
 
   </div>
   </body>

@@ -88,6 +88,9 @@
   max-width:50%;
 }
 
+#keyboardphoto img{
+  height: 600px;
+}
 
 
 #aboutlessons
@@ -312,7 +315,14 @@ button:hover {
 }
 
 
-
+.owl-carousel .item {
+  background: #4a90e2; 
+  color: #fff; 
+  padding: 30px; 
+  margin: 10px; 
+  border-radius: 5px; 
+  text-align: center; 
+} 
 
 
 /* Container class */
@@ -323,6 +333,7 @@ button:hover {
   padding-right: 100px;
   margin: 0 auto 30px auto; /* Centers the container */
   box-sizing: border-box; /* Ensures padding is included in the width calculation */
+  overflow: hidden;
 }
 
 /* Make it responsive */
@@ -335,11 +346,15 @@ button:hover {
       padding-right: 50px; /* Adjust padding for smaller screens */
   }
 
-  #flyer, #rubinguitar, #aboutme, #keyboardphoto, #aboutlessons, #lessonexperience, #topicscovered{
+  #carousel, #flyer, #rubinguitar, #aboutme, #keyboardphoto, #aboutlessons, #lessonexperience, #topicscovered{
   max-width:100%
 }
 
+
+
+
 #keyboardphoto img{
+  height: auto;
   width:100%
 }
 
